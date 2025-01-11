@@ -2,6 +2,7 @@ import { GoogleLogin } from '@react-oauth/google';
 import { jwtDecode } from "jwt-decode";
 import { useAuth } from '../context/AuthContext';
 import { Link } from 'wouter';
+import postUser from '../services/postUsers';
 
 const Nav = () => {
 
@@ -26,8 +27,8 @@ const Nav = () => {
             <div className='button-google'>
               <GoogleLogin
                 onSuccess={credentialResponse => {
-                  console.log(credentialResponse);
                   const decoded = jwtDecode(credentialResponse?.credential);
+                  postUser(decoded);
                   login(decoded);
                 }}
                 onError={() => {

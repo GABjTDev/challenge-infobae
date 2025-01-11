@@ -142,8 +142,31 @@
   text-decoration: none;
 }
 
+.container-users {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+}
+
+.container-info-user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-users img{
+  border-radius: 100%;
+  max-width: 50px;
+  margin-top: 20px;
+}
+
 @media screen and (min-width: 768px) {
   .container-posts{
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .container-users{
+    grid-template-columns: repeat(6, 1fr);
   }
 }

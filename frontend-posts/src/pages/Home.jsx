@@ -6,11 +6,11 @@ function Home() {
   const {posts, loading, error, categories, handleFilter, selectedCategory} = usePosts()
 
   if (loading) {
-    return <div>Cargando...</div>
+    return <div className="container-main">Cargando...</div>
   }
 
   if (error) {
-    return <div>{error}</div>
+    return <div className="container-main">{error}</div>
   }
 
   return (
