@@ -4,7 +4,7 @@ function ProtectedRoute({ children }) {
   const { user } = useAuth();
 
   if (!user) {
-    return <div>No tienes permisos para entrar a esta ruta.</div>;
+    return <h2 className="container-main">No tienes permisos para entrar a esta ruta.</h2>;
   }
 
   return children;

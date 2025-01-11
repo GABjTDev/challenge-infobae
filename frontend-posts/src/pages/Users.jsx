@@ -1,6 +1,6 @@
 function Users() {
   return (
-    <div>
+    <div className="container-main">
       users
     </div>
   )

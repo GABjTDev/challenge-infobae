@@ -19,6 +19,16 @@
   padding: 20px 0;
 }
 
+.nav-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.button-google {
+  margin-left: auto;
+}
+
 .container-filter-buttons {
   display: flex;
   flex-direction: column;
