@@ -15,6 +15,10 @@
   padding-bottom: 50px;
 }
 
+.navbar {
+  padding: 20px 0;
+}
+
 .container-filter-buttons {
   display: flex;
   flex-direction: column;

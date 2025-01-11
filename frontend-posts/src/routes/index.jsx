@@ -1,6 +1,8 @@
 import { Route } from 'wouter';
 import Home from '../pages/Home';
 import Post from '../pages/Post';
+import Users from '../pages/Users';
+import ProtectedRoute from './ProtectedRoute';
 
 const Routes = () => {
   return (
@@ -9,7 +11,9 @@ const Routes = () => {
       <Route path="/post/:id" component={Post} />
       
       {/* Ruta privada protegida */}
-      {/* <PrivateRoute path="/dashboard" component={Users} /> */}
+      <ProtectedRoute>
+        <Route path="/users" component={Users} />
+      </ProtectedRoute>
     </>
   );
 };
