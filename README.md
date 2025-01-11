@@ -34,8 +34,3 @@ Para deployar el back en local.
   npm run start
 ```
 
-
-## Screenshots
-
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-
