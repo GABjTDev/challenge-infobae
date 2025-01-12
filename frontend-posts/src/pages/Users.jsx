@@ -25,7 +25,7 @@ function Users() {
               return (
                 <div key={`${index}_${user}`} className="container-info-user">
                   <p>{user.name}</p>
-                  <img src='https://static.vecteezy.com/system/resources/thumbnails/024/983/914/small_2x/simple-user-default-icon-free-png.png' />
+                  <img src={user.picture || 'https://static.vecteezy.com/system/resources/thumbnails/024/983/914/small_2x/simple-user-default-icon-free-png.png'} />
                 </div>
               )
             })

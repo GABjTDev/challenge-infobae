@@ -1,13 +1,14 @@
 export default async function postUser(decoded) {
   const API_URL = import.meta.env.VITE_REACT_APP_URL_BACK + '/users'
-  const {name} = decoded;
+  const {name, picture} = decoded;
   fetch(API_URL, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
     },
     body: JSON.stringify({
-      name
+      name,
+      picture
     })
   })
   .then(response => response.json()) 
