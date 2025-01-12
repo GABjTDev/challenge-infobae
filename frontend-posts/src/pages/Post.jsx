@@ -13,7 +13,7 @@ function Post() {
 
     const fetchPost = async() => {
       const data = await getPost(id)
-      console.log(data);
+      // console.log(data);
       setPost(data)
     }
 
@@ -25,12 +25,12 @@ function Post() {
       <div className="container-main">
       <div className="page-post-container">
         <img src={post.image} alt="" />
-        <div>
-          <p>{post.category}</p>
-          <p>{post.updatedAt}</p>
+        <div className="page-post-info">
+          <p className="post-category">{post.category}</p>
+          <p className="post-date">{post.updatedAt}</p>
         </div>
-        <h2>{post.title}</h2>
-        <p>{post.content}</p>
+        <h2 className="title-page">{post.title}</h2>
+        <p className="content-page">{post.content}</p>
       </div>
     </div>
   )

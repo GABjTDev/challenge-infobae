@@ -16,12 +16,12 @@ const Nav = () => {
   return (
     <div className='navbar'>
       <div className='container-main nav-container'>
-        <Link to={'/'}>Home</Link>
+        <Link to={'/'} className="link-nav">Home</Link>
           {
             user ?
               <>
-                <Link to={'/users'}>Usuarios</Link>
-                <button className='button-google' onClick={() => { handleLogout() }}>logout</button>
+                <Link className="link-nav" to={'/users'}>Usuarios</Link>
+                <button className='link-nav button-google' onClick={() => { handleLogout() }}>logout</button>
               </>
             :
             <div className='button-google'>

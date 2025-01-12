@@ -9,7 +9,7 @@ function Users() {
   
     const fetchUsers = async() => {
       const data = await getAllUsers()
-      console.log(data);
+      // console.log(data);
       setUsers(data.users)
     }
 
